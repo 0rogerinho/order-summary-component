@@ -1,0 +1,125 @@
+@charset "UTF-8";
+:root {
+    /* cores priarias*/
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /*Color neutal*/
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: #111D40;
+    --Family: 'Red Hat Display';
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--Family);
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-position: left top;
+    background-repeat: repeat-x;
+    background-color: var(--Pale-blue) ;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    display: flex;
+    min-width: 300px;
+    max-width: 1440px;
+    width: 30% ;
+    flex-direction: column;
+    background-color:white;
+    border-radius: 10px;
+    align-items: center;
+}
+.image-box{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+    background-image: url(images/illustration-hero.svg);
+    background-position: center;
+    background-size: cover;
+}
+.description, .value-box, .payment-buttom{
+    text-align: center;
+}
+h1{
+    padding: 5%;
+    color: rgb(7, 14, 73);
+    font-weight: 900;
+}
+.p1{
+    color: var(--Desaturated-blue);
+    padding: 0px 20px 20px 20px;
+}
+.value-box{
+    width: 85%;
+    display: flex;
+    background-color: hsla(225, 100%, 94%, 0.349);
+    align-items: center;
+    border-radius: 8px;
+}
+.image-music{
+    margin: 15px;
+    width: 15%;
+}
+.plano-change{
+    margin-left: auto;
+    padding-right: 20px ;
+    color: #2916ce;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.box-annual {
+    margin: 10px;
+    color: rgb(7, 14, 73);
+    font-weight: 900;
+}
+.plano-p-annual{
+    font-size: 1rem;
+}
+.plano-p-valor{
+    color: rgba(0, 0, 0, 0.459);
+    padding-top: 5px ;
+    font-size: 0.9rem;
+}
+#payment{
+    display: flex;
+    width: 100% ;
+    flex-direction: column;
+    align-items: center;
+}
+.buttom-payment:hover{
+    scale: 110%;
+    color: rgb(56, 243, 150) ;
+    cursor: pointer;
+}
+.buttom-payment{
+    display: flex;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #1f0eda;
+    width: 85%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 10px 15px #1f0eda42;
+    transition: all 0.5s,0.5s;
+}
+.cancel-order{
+    font-size: 0.9rem;
+    color: var(--Desaturated-blue);
+}
+.attribution{
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 20px;
+}
